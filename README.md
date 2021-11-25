@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://viktoriia-o.github.io/frontend-mentor-e-commerce-product-page/)
 
 ## My process
 
