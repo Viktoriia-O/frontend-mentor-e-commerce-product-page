@@ -1,0 +1,28 @@
+// transition
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    transition:  $what $time $how;
+}
+
+// breakpoint
+@mixin breakpoint($point) {
+    @if $point == 'lg' {
+        @media only screen and (min-width: 1440px) {
+            @content;
+        }
+    } 
+    @else if $point == 'md' {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    } 
+    @else if $point == 'sm' {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $point == 'xs' {
+        @media only screen and (min-width: 576px) {
+            @content;
+        }
+    }
+}

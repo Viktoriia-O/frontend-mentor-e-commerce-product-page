@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./dist/css/main.min.css">
+
+        <title>Frontend Mentor | E-commerce product page</title>
+    </head>
+
+    <body>
+        <header class="header content-width">
+            <div class="header-inner d-flex">
+                <div class="header-left d-flex align-center">
+                    <div class="menu-btn">
+                        <span class="menu-btn-item"></span>
+                        <span class="menu-btn-item"></span>
+                        <span class="menu-btn-item"></span>
+                    </div>
+                    <a class="logo" href="#" aria-label="Go to home">
+                        <img src="./src/images/logo.svg" alt="Sneakers">
+                    </a>
+                    <nav class="main-nav">
+                        <ul class="nav-list d-flex">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Collections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-left d-flex align-center">
+                    <div class="cart">
+                        <div class="cart-counter"></div>
+                        <img class="cart-icon" src="./src/images/icon-cart.svg" alt="Cart">
+                        <div class="cart-inner">
+                            <div class="cart-heading bold">Cart</div>
+                            <div class="cart-content d-flex align-center">
+                                <div class="cart-empty bold active">Your cart is empty.</div>
+                                <div class="cart-product cart-full">
+                                    <div class="cart-product-inner d-flex align-center">
+                                        <div class="cart-product-image"></div>
+                                        <div class="cart-product-content d-flex">
+                                            <span class="cart-product-title">Fall Limited Edition Sneakers</span>
+                                            <div class="cart-product-info">
+                                                <span class="cart-product-price">$125.00</span>
+                                                <span class="cart-product-qty"></span>
+                                                <span class="cart-product-total bold"></span>
+                                            </div>
+                                        </div>
+                                        <a class="cart-product-delete" href="#" aria-label="Delete button">
+                                            <img src="./src/images/icon-delete.svg" alt="Delete">
+                                        </a>
+                                    </div>
+                                    <a class="button" href="#">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="user" href="#" aria-label="User avatar">
+                        <img src="./src/images/image-avatar.png" alt="User avatar">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="product content-width">
+                <div class="product-inner d-flex">
+                    <div class="product-images d-flex">
+                        <div class="product-images-inner d-flex">
+                            <div class="close-btn">
+                                <span class="close-btn-item"></span>
+                                <span class="close-btn-item"></span>
+                            </div>
+                            <div class="product-image-wrap">
+                                <div class="product-image"></div>
+                                <div class="slider-btn d-flex align-center">
+                                    <span class="slider-btn-prev"></span>
+                                    <span class="slider-btn-next"></span>
+                                </div>
+                            </div>
+                            <div class="product-thumbs">
+                                <div class="product-thumb-wrap">
+                                    <div class="product-thumb active" style="background-image: url(./src/images/image-product-1.jpg);"></div>
+                                </div>
+                                <div class="product-thumb-wrap">
+                                    <div class="product-thumb" style="background-image: url(./src/images/image-product-2.jpg);"></div>
+                                </div>
+                                <div class="product-thumb-wrap">
+                                    <div class="product-thumb" style="background-image: url(./src/images/image-product-3.jpg);"></div>
+                                </div>
+                                <div class="product-thumb-wrap">
+                                    <div class="product-thumb" style="background-image: url(./src/images/image-product-4.jpg);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-preheading text-transform bold">Sneaker Company</div>
+                        <h1 class="product-heading">Fall Limited Edition Sneakers</h1>
+                        <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                        <div class="product-price-inner d-flex">
+                            <div class="product-price-top d-flex align-center">
+                                <span class="product-price bold">$125.00</span>
+                                <span class="product-discount bold">50%</span>
+                            </div>
+                            <span class="product-fullprice bold">$250.00</span>
+                        </div>
+                        <div class="product-qty-wrap d-flex">
+                            <div class="product-qty-inner bold d-flex align-center">
+                                <img class="product-qty-btn minus" src="./src/images/icon-minus.svg" alt="Reduce quantity">
+                                <span class="product-qty text-center">0</span>
+                                <img class="product-qty-btn plus" src="./src/images/icon-plus.svg" alt="Add quantity">
+                            </div>
+                            <button class="button button-cart">
+                                <span>Add to cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="content-width text-center">
+            <div class="footer-inner">
+                <small class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Viktoriia O</a>.
+                </small>
+            </div>
+        </footer>
+        
+        <script src="./dist/js/script.min.js"></script>
+    </body>
+</html>
