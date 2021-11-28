@@ -707,7 +707,8 @@ button.button-cart span::before,
 }
 
 .product .product-thumb.active {
-  outline: 2px solid #ff7d1a;
+  -webkit-box-shadow: 0 0 0 2px #ff7d1a;
+          box-shadow: 0 0 0 2px #ff7d1a;
 }
 
 .product .product-thumb.active::before {
