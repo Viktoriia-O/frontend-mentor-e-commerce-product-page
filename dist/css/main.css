@@ -673,8 +673,6 @@ button.button-cart span::before,
   border-radius: 50%;
   background: center/9px 12px no-repeat url(../../images/icon-arrow.svg) white;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .product .slider-btn .slider-btn-prev:hover,

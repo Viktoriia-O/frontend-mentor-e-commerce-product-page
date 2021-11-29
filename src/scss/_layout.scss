@@ -438,7 +438,6 @@
             border-radius: 50%;
             background: center / 9px 12px no-repeat url(../../images/icon-arrow.svg) $color-white;
             cursor: pointer;
-            @include transition;
 
             &:hover {
                 background-image: url(../../images/icon-arrow-orange.svg);
